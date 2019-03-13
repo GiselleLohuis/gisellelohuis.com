@@ -1,0 +1,418 @@
+* {
+padding: 0;
+margin: 0;
+border: 0;
+offset: 0;
+list-style: none;
+vertical-align: baseline;
+box-sizing: border-box;
+-webkit-text-size-adjust: none;
+}
+
+@font-face {
+font-family:'Maison Neue Demi';
+src:url("fonts/Maison-Neue-Demi.ttf") format("truetype");
+font-weight:normal;
+font-style:normal; }
+
+@font-face {
+font-family:'Avenir Book';
+src:url("fonts/avenir-book.ttf") format("truetype");
+font-weight:normal;
+font-style:normal; }
+
+@font-face {
+font-family:'Avenir Medium';
+src:url('fonts/Avenir-Medium.ttf') format('truetype');
+font-weight:normal;
+font-style:normal; }
+
+body {
+font-family: 'Avenir Medium', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+hgroup {
+width: 100%;
+height: 100vh;
+}
+
+ul li a {
+color: black;
+}
+
+h1 {
+font-family: 'Maison Neue Demi', sans-serif;
+font-size: 48px;
+font-weight: 400;
+position: absolute;
+top: 40%;
+width: 400px;
+line-height: 64px;
+margin: 0 40px;
+}
+
+h2 {
+position: absolute;
+top: 34%;
+font-size: 24px;
+font-weight: 400;
+font-family: 'Maison Neue Demi', sans-serif;
+margin-left: 40px;
+}
+
+.about {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 99;
+overflow-y: auto;
+}
+
+.about input {
+display: block;
+width: 80px;
+height: 80px;
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+opacity: 0;
+z-index: 207;
+-webkit-touch-callout: none;
+}
+
+.about h3 {
+font-family: 'Maison Neue Demi', sans-serif;
+font-weight: 400;
+float: right;
+padding: 30px;
+display: block;
+width: 100px;
+margin-bottom: 5px;
+position: relative;
+z-index: 200;
+/*transform-origin: 22px -2px;*/
+transform-origin: 4px 0px;
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+opacity 0.55s ease;
+}
+
+.about span {
+transform: translate(0, -50px);
+transition: transform 0.4s ease;
+color: #fff;
+z-index: 205;
+position: fixed;
+top: 30px;
+right: 30px;
+font-size: 30px;
+}
+
+.about input:checked ~ span {
+transform: translate(0, 0);
+}
+
+.about section {
+overflow: hidden;
+background: #000;
+position: absolute;
+height: 100vh;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+padding: 80px 40px;
+transform-origin: 0% 0%;
+transform: translate(0, -200vh);
+transition: transform 0.6s ease;
+}
+
+.about input:checked ~ section {
+display: block;
+transform: translate(0, 0);
+}
+
+.about section p {
+color: #fff;
+font-size: 24px;
+width: 40%;
+float: left;
+line-height: 36px;
+padding-bottom: 24px;
+clear: both;
+}
+
+.about section a {
+color: #fff;
+}
+
+h4 {
+  font-family: 'Maison Neue Demi', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  float: left;
+  font-weight: 400;
+  margin-left: 40px;
+  border-bottom: solid 2px #000;
+}
+
+ol {
+  padding: 40px;
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+
+ol h5 {
+  font-family:'Avenir Book', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 24px;
+  float: left;
+  width: 50%;
+}
+
+ol p {
+  font-family:'Avenir Book', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 12px;
+  float: left;
+  width: 45%;
+  clear: left;
+}
+
+ol > li {
+  clear: both;
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+}
+
+ol ul {
+  float: right;
+  width: 45%;
+}
+
+ol ul li {
+  float: left;
+  width: 47%;
+}
+
+ol ul li:nth-child(odd) {
+  margin-right: 6%;
+}
+
+ol ul li img {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 4px 1px rgba(149, 149, 149, 0.44);
+}
+
+main ol ul li img {
+box-shadow: none;
+}
+
+ol li:nth-child(even) h5 {
+  float: right;
+  width: 45%;
+  clear: right;
+}
+
+ol li:nth-child(even) p {
+  float: right;
+  width: 45%;
+  clear: right;
+}
+
+ol li:nth-child(even) ul {
+  float: left;
+  width: 45%;
+}
+
+/*WEBSITE*/
+
+
+main {
+float: left;
+width: 100%;
+background-color: #F5F5F5;
+clear: both;
+}
+
+main ol {
+padding: 80px 0 40px 0;
+margin: 0 auto;
+width: 80%;
+}
+
+main ol ul li img{
+width: 100%;
+margin-bottom: 0;
+padding: 20px 0 20px 0;
+}
+
+main ol ul {
+float: none;
+width: 100%;
+}
+
+main ol ul li {
+width: 100%;
+}
+
+main ol p {
+padding: 20px 0 20px;
+font-size: 28px;
+line-height: 40px;
+width: 100%;
+float: none;
+}
+
+main ol ul.web li p {
+width: 100%;
+}
+
+main ol ul.web li:first-child {
+width: 100%;
+}
+
+main ol ul.web li:last-child {
+float: right;
+}
+
+main ol ul.web li {
+margin: 0;
+width: 48%;
+}
+
+ol ul.web li:last-child {
+margin: 0 0 80px;
+}
+
+
+/*FOOTER*/
+
+
+footer {
+position: relative;
+width: 100%;
+background-color: black;
+float: left;
+height: 500px;
+top: -140px;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -140px;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: black;
+}
+
+footer ul {
+padding: 140px 0 0 40px;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+
+footer ul li {
+color: #fff;
+text-transform: uppercase;
+/*font-size: 30px;*/
+line-height: 72px;
+font-family: 'Maison Neue Demi', sans-serif;
+font-size: 48px;
+font-weight: 400;
+}
+
+footer ul li a {
+text-decoration: none;
+position: relative;
+color: #fff;
+}
+
+footer ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid #fff;
+  transition: 0.4s;
+}
+
+footer ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid rgba(255,255,255,.2);
+
+}
+
+footer ul li a:hover:after {
+width: 100%;
+}
+
+footer ul li a:active {
+opacity: .5;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .about section p {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width:414px) {
+
+  .about section p {
+    width: 100%;
+  }
+
+  h1 {
+    width: auto;
+    font-size: 34px;
+    line-height: 40px;
+    margin: 0 24px;
+    max-width: 260px;
+  }
+
+  h2 {
+    margin: 0 24px;
+  }
+
+  main ol ul.web li,
+  ol ul,
+  ol h5,
+  ol p {
+    width: 100%;
+  }
+
+ol li:nth-child(even) ul,
+ol li:nth-child(even) p,
+ol li:nth-child(even) h5 {
+  width: 100%;
+}
+
+}
