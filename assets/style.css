@@ -160,19 +160,23 @@ ol.cases li {
 }
 
 ol.cases li:nth-child(1) {
-  width: 54%;
-}
-
-ol.cases li:nth-child(2) {
   width: 42%;
 }
 
+ol.cases li:nth-child(2) {
+  width: 54%;
+}
+
 ol.cases li:nth-child(3) {
-  width: 40%;
+  width: 56%;
 }
 
 ol.cases li:nth-child(4) {
-  width: 56%;
+  width: 40%;
+}
+
+ol.cases li:nth-child(5) {
+  width: 50%;
 }
 
 ol.cases li:nth-child(even) {
